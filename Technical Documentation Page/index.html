@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <div class="wrapper">
+    <nav id="nav-bar">
+        <h2>JS Documentation</h2>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#data-types">Data Types</a></li>
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+            <li><a class="nav-link" href="#declaring_variables">Declaring Variables</a></li>
+            <li><a class="nav-link" href="#conditionals">Conditionals</a></li>
+            <li><a class="nav-link" href="#arrays">Arrays</a></li>
+            <li><a class="nav-link" href="#objects">Objects</a></li>
+            <li><a class="nav-link" href="#function_declarations">Function Declarations</a></li>
+            <li><a class="nav-link" href="#references">References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <h1>Introduction</h1>
+            <p class="introduction-text">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+            <p class="introduction-text">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+            <ul>
+                <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+                <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+            </ul>
+        </section>
+        <section id="data-types" class="main-section">
+            <h1>Data Types</h1>
+            <p>There are 8 basic data types in JavaScript.</p>
+            <ul>
+                <li><code>number</code> for numbers of any kind: integer or floating-point</li>
+                <li><code>bigint</code> is for integer numbers of arbitrary length.</li>
+                <li><code>string</code> for strings. A string may have zero or more characters, there’s no separate single-character type.</li>
+                <li><code>boolean</code> for <code>true / false</code>.</li>
+                <li><code>null</code> for unknown values – a standalone type that has a single value <code>null</code>.</li>
+                <li><code>undefined</code> for unassigned values – a standalone type that has a single value <code>undefined</code>.</li>
+                <li><code>object</code> for more complex data structures.</li>
+                <li><code>symbol</code> for unique identifiers.</li>
+            </ul>
+            <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+        </section>
+        <section id="variables" class="main-section">
+            <h1>Variables</h1>
+            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+            <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+            <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+        </section>
+        <section id="declaring_variables" class="main-section">
+            <h1>Declaring Variables</h1>
+            <p>There are three ways to declare a variable</p>
+            <p>With the keyword <code>var</code>:</p>
+            <code>var variableName = 30;</code>
+            <p>With the keyword <code>let</code>:</p>
+            <code>let variableName = "I'm using the let keyword"</code>
+            <p>With the keyword <code>const</code>:</p>
+            <code>const variableName = "Using the const keyword"</code>
+            <p>Before 2015, using the var keyword was the only way to declare a JavaScript variable.</p>
+            <p>The 2015 version of JavaScript (ES6 - ECMAScript 2015) allows the use of the <code>const</code> keyword to define a variable that cannot be reassigned, and the <code>let</code> keyword to define a variable with restricted scope.</p>
+        </section>
+        <section id="conditionals" class="main-section">
+            <h1>Conditionals</h1>
+            <p>Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.</p>
+            <p>There are multiple different types of conditionals in JavaScript including:</p>
+            <ul>
+                <li>“If” statements: where if a condition is true it is used to specify execution for a block of code.</li>
+                <li>“Else” statements: where if the same condition is false it specifies the execution for a block of code.</li>
+                <li>“Else if” statements: this specifies a new test if the first condition is false.</li>
+            </ul>
+            <pre>
+            <code class="conditionals_code">
+                if (conditon to be checked, ex: 1 < 2) { <br>
+                    run this block of code <br>
+                     } else if (second condition to be checked, ex 1 > 2) { <br>
+                    run this block of code instead <br> 
+                     } else { <br>
+                        if none of the conditions above evaulate to true, run this block of code <br>
+                     }
+            </code>
+        </pre>
+        </section>
+        <section id="arrays" class="main-section">
+            <h1>Arrays</h1>
+            <p class="array_text">The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
+            <p class="array_text">The Array parameter is a list of strings or integers. When you specify a single numeric parameter with the Array constructor, you specify the initial length of the array. The maximum length allowed for an array is 4,294,967,295.</p>
+            <p class="array_text">You can create array by simply assigning values as follows:</p>
+            <code class="syntax">let arrayName = [ 'apple', 'mango', 'banana'];</code>
+            <p class="array_text">You will use ordinal numbers(index numbers) to access and to set values inside an array as follows:</p>
+            <pre>
+                <code class="arrays_code">
+                    <p>arrayName[0] is the first element</p>
+                    <p>arrayName[1] is the second element</p>
+                    <p>arrayName[2] is the third element</p>
+                </code>
+            </pre>
+        </section>
+        <section id="objects" class="main-section">
+            <h1>Objects</h1>
+            <p>As we know from the chapter Data types, there are eight data types in JavaScript. Seven of them are called “primitive”, because their values contain only a single thing (be it a string or a number or whatever).</p>
+            <p>In contrast, objects are used to store keyed collections of various data and more complex entities. In JavaScript, objects penetrate almost every aspect of the language.</p>
+            <p>An object can be created with figure brackets <code>{…}</code> with an optional list of properties. A property is a “key: value” pair, where <code>key</code> is a string (also called a “property name”), and <code>value</code> can be anything.</p>
+            <p>We can imagine an object as a cabinet with signed files. Every piece of data is stored in its file by the key. It’s easy to find a file by its name or add/remove a file.</p>
+            <pre>
+                <code class="objects_code">
+                    let objectName = { 
+                        name : 'Szabi',
+                        age : 30,
+                        location : Amsterdam
+                    }
+                </code>
+            </pre>
+            <p>In the above example <strong>name</strong>, <strong>age</strong> and <strong>location</strong> are all <strong>keys</strong> and <strong>Szabi</strong>, <strong>30</strong> and <strong>Amsterdam</strong> are values of these keys respectively</p>
+        </section>
+        <section id="function_declarations" class="main-section">
+            <h1>Function Declarations</h1>
+            <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets,<code>{ }</code>.</li>
+                </ul>
+            <p>For example, the following code defines a simple function named square:</p>
+            <code>function square(number) { return number * number; }</code>
+            <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
+            <code>return number * number;</code>
+        </section>
+        <section id="references" class="main-section">
+            <h1>References</h1>
+            <p>This is a very short introduction-text about JavaScript.</p>
+            <p>For more information visit this <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">link</a>.</p>
+        </section>
+    </main>
+</div>
+</body>
+</html>
