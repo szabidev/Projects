@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 100px;
+}
+#nav-bar {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100px;
+    background-color: #1f1d1b;
+    display: flex;
+    justify-content: space-between;
+}
+#header-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    border-radius:50px;
+}
+#nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+}
+ul li{
+    list-style: none;
+}
+.nav-link {
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    transform: scale(1.5);
+}
+.nav-link a:link {
+    text-decoration: none;
+    color: grey;
+}
+.nav-link a:visited {
+    text-decoration: none;
+    color: grey;
+}
+.nav-link a:hover {
+    text-decoration: none;
+    color: grey;
+}
+.nav-link a:active {
+    text-decoration: none;
+    color: grey;
+}
+#mission h2 {
+    text-align: center;
+    padding: 20px;
+}
+#email {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-radius: 4px;
+}
+#submit {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #f1c40f;
+    font-weight: 600;
+    border: 1px solid  #f1c40f;
+    border-radius: 4px;  
+    margin-bottom: 30px; 
+}
+.lorem {
+    display:block;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+#how {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#how h2 {
+    padding: 30px;
+}
+#video {
+    padding: 30px;
+    width: 600px;
+    height: 400px;
+}
+#price {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.product {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    
+}
+.product div {
+    text-align: center;
+    background-color: #ddd;
+    height: 50px;
+    padding: 15px;
+    font-weight: bolder;
+}
+.product p {
+    padding: 20px;
+    font-style: italic;
+}
+.product li {
+    padding: 5px;
+    list-style: none;
+}
+.product button {
+    margin-top: 50px;
+    width: 60%;
+    background-color: #f1c40f;
+    height: 10%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.footer {
+    margin-top: 25px;
+    width: 100%;
+    height:80px;
+    background-color: #1f1d1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gotop {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: grey;
+    font-size: 50px;
+    scroll-behavior: smooth;
+    
+}
+@media only screen and (max-width: 600px) {
+    #price {
+        display: block;
+        padding: 20px;
+    }
+}
+
+/* add footer with an arrow sign that takes you to the top of the page */
