@@ -1,0 +1,1 @@
+Recreated some lodash functionality
